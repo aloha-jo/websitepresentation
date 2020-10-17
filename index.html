@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+  <title>Presentation</title>
+</head>
+<body>
+  <!--
+    Page 1 Intro
+  -->
+  <section id="page-1" class="page">
+    <h1>The Benefits of A Website</h1>
+    <p>A business today needs to have a website in order to be competitive. Without an online presence it is difficult to establish trust with a potential customer. However, so many small businesses and especially those that provide a service don’t have one. Many service providers or contractors will still pay for a listing in the yellow pages because they have to “be somewhere”. My position,“that somewhere” should be online, where it has a chance to bring you a return on your investment.
+    </p>
+  <div>
+    <a href="#page-2" class="btn">
+      Next Page <i class="fas fa-arrow-circle-down"></i>
+    </a> 
+  </div>
+  </section>  
+
+  <!--
+    Page 2 
+  -->
+<section id="page-2">
+  <section class="purchase-funnel">
+    <div class="funnel_image">
+      <img src="images/Purchase Funnel.png" />
+    </div>
+    <div class="info-content">
+      <h2>The Purchase Funnel</h2>
+      <p>Consumers love to browse before they purchase, it is called the purchase funnel. Stages include: Awareness, Interest, Consideration, Intent, Evaluation, Purchase.</p>
+    </div>
+  <div id="page-2" class="column">
+  <div class="row">
+      <a href="#page-1" class="btn btn-dark">
+        Prev Page <i class="fas fa-arrow-circle-up"></i>
+      </a> 
+      <a href="#page-3" class="btn">
+        Next Page <i class="fas fa-arrow-circle-down"></i>
+      </a> 
+    </div>
+  </section> 
+</section>
+  <!--
+    Page 3 
+  -->
+
+  <section id="page-3" class="page">
+    <h1>Why The Purchase Funnel Matters</h1>
+    <p>A business will need
+      to capture their attention in the
+      stages prior to purchase, if they
+      have any hope of being the
+      purchase choice. That will likely
+      include, searching online, at night
+      when businesses are closed.
+      Businesses and contractors
+      without a website are at a disadvantage as they are not even in consideration during many of the important steps prior to purchase.</p>
+  <div>
+    <a href="#page-2" class="btn btn-dark">
+      Prev Page <i class="fas fa-arrow-circle-up"></i>
+    </a> 
+    <a href="#page-4" class="btn">
+      Next Page <i class="fas fa-arrow-circle-down"></i>
+    </a> 
+  </div>
+  </section>  
+  <!--
+    Page 4
+  -->
+
+  <section id="page-4" class="page">
+    <h1>Building Trust</h1>
+    <p>Building trust prior to a purchase is difficult. That can be accomplished with a good website. By making choices such as a list of clients, testimoials, pictures of the quality of your work, show your clean dependable workers and so much more. Establishing your personality and professionalism prior to hire is sure to get you the job!</p>
+  <div>
+    <a href="#page-3" class="btn btn-dark">
+      Prev Page <i class="fas fa-arrow-circle-up"></i>
+    </a> 
+  </div>
+  </section>  
+  <script
+  src="https://code.jquery.com/jquery-3.5.1.min.js"
+  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+  crossorigin="anonymous"></script>
+
+  <script>
+    //Smooth Scrolling
+    $('.btn').on('click', function(event) {
+        if (this.hash !== '') {
+          event.preventDefault();
+          const hash = this.hash;
+          $('html, body').animate(
+            {
+              scrollTop: $(hash).offset().top
+            },
+            800
+          );
+        }
+      });
+  </script>
+</body>
+</html>
